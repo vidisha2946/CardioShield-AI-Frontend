@@ -22,7 +22,7 @@ const Hero = () => {
       </div>
 
       {/* New Unique Visuals */}
-      <div className="hero-visual-container hidden-on-mobile">
+      <div className="hero-visual-container">
           <div className="holo-sphere">
                 {/* Rotating Rings */}
               <div className="ring ring-1"></div>

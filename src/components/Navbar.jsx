@@ -73,14 +73,14 @@ const Navbar = () => {
                 
                 <div className="nav-links">
                     <Link to="/" className="nav-link" onClick={handleHomeClick}>
-                        <FaHome /> Home
+                        <FaHome /> <span className="nav-text">Home</span>
                     </Link>
                     <button onClick={() => scrollToSection('about')} className="nav-link">
-                        <FaInfoCircle /> Details
+                        <FaInfoCircle /> <span className="nav-text">Details</span>
                     </button>
                     
                     <Link to="/diagnostic" className="btn-highlight" style={{ textDecoration: 'none' }}>
-                        <MdLocalHospital /> Diagnostic Tool
+                        <MdLocalHospital /> <span className="nav-text">Diagnostic Tool</span>
                     </Link>
 
                     <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle Theme">
