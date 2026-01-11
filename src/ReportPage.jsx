@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { generatePDF } from './utils/reportGenerator';
 import { FaFileDownload, FaArrowLeft, FaHeartbeat } from 'react-icons/fa';
 import { RadialBarChart, RadialBar, Legend, ResponsiveContainer } from 'recharts';
+import PreventionTips from './components/PreventionTips';
 
 const ReportPage = () => {
     const location = useLocation();
@@ -126,8 +127,12 @@ const ReportPage = () => {
                         </p>
                     </div>
 
+                    {/* Prevention Tips Section */}
+                    <PreventionTips result={result} />
+
                     <div style={{ marginTop: '2rem', textAlign: 'center', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                        <p>Disclaimer: This is an AI-generated report for informational purposes only. It is not a medical diagnosis.</p>
+                        <p>Disclaimer: This is an AI-generated report for <strong>educational purposes only</strong>. It is not a medical diagnosis.</p>
+                        <p style={{ marginTop: '0.5rem' }}>Always <strong>consult a doctor</strong> for professional medical advice.</p>
                     </div>
 
                 </div>
